@@ -14,8 +14,6 @@ describe "as a user" do
     click_on "Search"
 
     expect(page).to have_content("50")
-    # translate fdcid to get food
-    expect(page).to have_content("600987")
-
+    expect(page).to have_content("SWEET POTATOES", count: 10)
   end
 end
